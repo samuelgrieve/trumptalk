@@ -1,2 +1,2 @@
 # trumptalk
-Dummy text generator of things Trump has said.
+Random Donald Trump photo and quote generater.
