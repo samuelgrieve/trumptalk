@@ -2,6 +2,7 @@
 <head>
 <title>Trump Talk - Random Quote Generator</title>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!--<script src="https://www.google.com/jsapi"></script>-->
 <script src="scripts.js"></script>
@@ -77,13 +78,58 @@
 	#randomizeBtn:hover, #randomizeBtnTop:hover {
 		cursor: pointer;
 	}
+	@media screen and (max-width: 1400px){
+		#container {
+			width: 96%;
+			padding: 2%;
+			height: auto;
+			margin: 25px auto;
+		}
+	}
+	#randomizeBtn:hover, #randomizeBtnTop:hover {
+		cursor: pointer;
+	}
+	@media screen and (max-width: 800px){
+		#container {
+			width: 94%;
+			padding: 0 3% 3% 3%;
+			height: auto;
+			margin: 25px auto;
+		}
+		#logo {
+			float: left;
+		}
+		#trump span {
+			float: left;
+			margin: 10px 0;
+			line-height: 18px;
+		}
+		#randomizeBtnTop {
+			float: left;
+			margin: 10px 0;
+			width: 100%;
+		}
+		#showPhoto {
+			float: left;
+			margin: 10px 0;
+		}
+		#showPhoto {
+			float: left;
+			margin: 10px 0;
+			height:200px;
+		}
+		#showQuote {
+			float: left;
+			margin: 10px 0;
+		}
+	}
 </style>
 </head>
 <body>
 
 <div id="container">
 	<div id="trump">
-		<img src="trump.png"> TrumpTalk <span>Random image &amp; quote generator</span>
+		<img id="logo" src="trump.png"> TrumpTalk <span>Random image &amp; quote generator</span>
 		<div id="randomizeBtnTop">Randomize</div>
 	</div>
 	<div id="showPhoto"></div>
