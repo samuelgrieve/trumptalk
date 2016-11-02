@@ -201,14 +201,14 @@
 		var showQuote = document.getElementById("showQuote");
 
 		function randomPhoto(){
-			let trumpPhoto = trumpPhotos[Math.floor(Math.random()*trumpPhotos.length)];
+			var trumpPhoto = trumpPhotos[Math.floor(Math.random()*trumpPhotos.length)];
 			//showPhoto.innerHTML = '<img src="trumps/'+trumpPhoto+'">';
 			//showPhoto.innerHTML = `<img src="trumps/${trumpPhoto}">`;
 			showPhoto.style.backgroundImage = 'url("trumps/'+trumpPhoto+'")';
 		}
 
 		function randomQuote(){
-			let trumpQuote = trumpQuotes[Math.floor(Math.random()*trumpQuotes.length)];
+			var trumpQuote = trumpQuotes[Math.floor(Math.random()*trumpQuotes.length)];
 			showQuote.innerHTML = trumpQuote;
 		};
 
